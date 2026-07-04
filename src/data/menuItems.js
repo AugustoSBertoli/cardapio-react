@@ -1,3 +1,5 @@
+const imgPath = (name) => `${import.meta.env.BASE_URL}images/${name}`;
+
 const burgerAddons = [
     { id: "bacon", name: "Bacon extra", price: 6.9 },
     { id: "hamburguer", name: "Hambúrguer extra", price: 12.9 },
@@ -13,7 +15,7 @@ export const menuItems = [
         description: "Porção generosa com sal",
         price: 22.9,
         category: "Entradas",
-        image: "/images/batata-frita.jpg",
+        image: imgPath("batata-frita.jpg"),
     },
     {
         id: "2",
@@ -21,7 +23,7 @@ export const menuItems = [
         description: "Anéis de cebola empanados com molho especial",
         price: 24.9,
         category: "Entradas",
-        image: "/images/onion-rings.jpg",
+        image: imgPath("onion-rings.jpg"),
     },
     {
         id: "3",
@@ -29,7 +31,7 @@ export const menuItems = [
         description: "Iscas crocantes com molhos à parte",
         price: 26.9,
         category: "Entradas",
-        image: "/images/frango-empanado.jpg",
+        image: imgPath("frango-empanado.jpg"),
     },
 
     // Hambúrgueres
@@ -39,7 +41,7 @@ export const menuItems = [
         description: "180g, queijo cheddar, alface, cebola, tomate e molho da casa",
         price: 32.9,
         category: "Hambúrgueres",
-        image: "/images/classico-smash.jpg",
+        image: imgPath("classico-smash.jpg"),
         addons: burgerAddons,
     },
     {
@@ -48,7 +50,7 @@ export const menuItems = [
         description: "Dois blends 100g, queijo prato, bacon crocante e cebola caramelizada",
         price: 39.9,
         category: "Hambúrgueres",
-        image: "/images/bacon-duplo.jpg",
+        image: imgPath("bacon-duplo.jpg"),
         addons: burgerAddons,
     },
     {
@@ -57,7 +59,7 @@ export const menuItems = [
         description: "180g, queijo prato, onion rings e molho barbecue defumado",
         price: 37.9,
         category: "Hambúrgueres",
-        image: "/images/bbq-onion.jpg",
+        image: imgPath("bbq-onion.jpg"),
         addons: burgerAddons,
     },
     {
@@ -66,7 +68,7 @@ export const menuItems = [
         description: "180g, dobro de cheddar cremoso e cebola roxa",
         price: 36.9,
         category: "Hambúrgueres",
-        image: "/images/cheddar-explosion.jpg",
+        image: imgPath("cheddar-explosion.jpg"),
         addons: burgerAddons,
     },
 
@@ -77,7 +79,7 @@ export const menuItems = [
         description: "350ml — Coca-Cola, Guaraná ou Sprite",
         price: 7.9,
         category: "Bebidas",
-        image: "/images/refrigerante.jpg",
+        image: imgPath("refrigerante.jpg"),
     },
     {
         id: "9",
@@ -85,7 +87,7 @@ export const menuItems = [
         description: "300ml — Laranja, limão ou maracujá",
         price: 9.9,
         category: "Bebidas",
-        image: "/images/suco.jpg",
+        image: imgPath("suco.jpg"),
     },
     {
         id: "10",
@@ -93,7 +95,7 @@ export const menuItems = [
         description: "400ml — Chocolate, morango ou baunilha",
         price: 18.9,
         category: "Bebidas",
-        image: "/images/milkshake.jpg",
+        image: imgPath("milkshake.jpg"),
     },
 
     // Sobremesas
@@ -103,7 +105,7 @@ export const menuItems = [
         description: "Brownie quente com bola de sorvete de creme",
         price: 19.9,
         category: "Sobremesas",
-        image: "/images/brownie.jpg",
+        image: imgPath("brownie.jpg"),
     },
     {
         id: "12",
@@ -111,6 +113,6 @@ export const menuItems = [
         description: "Bolo de chocolate com recheio cremoso e sorvete",
         price: 22.9,
         category: "Sobremesas",
-        image: "/images/petit-gateau.jpg",
+        image: imgPath("petit-gateau.jpg"),
     },
 ];
