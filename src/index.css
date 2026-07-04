@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #6f4518;
+  --color-primary-dark: #4a2d0f;
+  --color-accent: #d4a017;
+  --color-bg: #f5f0e8;
+  --color-card-bg: #ffffff;
+  --color-text: #2b1d16;
+  --color-text-secondary: #8a7a6f;
+  --color-border: #e8ded0;
+  --color-dark: #1c1410;
+  --radius: 14px;
+  --shadow-card: 0 4px 14px rgba(28, 20, 16, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
